@@ -37,6 +37,7 @@ ai:
 importance: Critical
 context_priority: Highest
 -------------------------
+---
 
 # Project Overview
 
