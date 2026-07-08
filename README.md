@@ -1,15 +1,3 @@
----
-
-document_id: GF-README-001
-title: GiveFlow India Blueprint Repository
-version: 1.0.0
-status: Active
-owner: GiveFlow India Project
-repository: https://github.com/souhridyapatra/Giveflow_India_Blueprint
-last_updated: 2026-07-08
-license: MIT (Recommended)
---------------------------
-
 # GiveFlow India Blueprint
 
 > **The Engineering Blueprint for Building India's Next-Generation Multi-Tenant NGO Donation & Compliance Platform**
