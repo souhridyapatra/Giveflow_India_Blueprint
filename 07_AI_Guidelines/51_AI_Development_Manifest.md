@@ -1,0 +1,362 @@
+---
+
+document_id: GF-AI-001
+title: AI Development Manifest
+version: 1.0.0
+status: Active
+owner: GiveFlow India Project
+last_updated: 2026-07-08
+location: docs/07_AI_Guidelines/51_AI_Development_Manifest.md
+depends_on:
+
+* README.md
+  referenced_by:
+* All Project Documents
+* Google AI Studio Prompts
+* Architecture Decision Records (ADRs)
+
+---
+
+# AI Development Manifest
+
+> **The persistent engineering memory and governance document for GiveFlow India.**
+
+---
+
+# Purpose
+
+The AI Development Manifest serves as the authoritative project memory for GiveFlow India.
+
+Its purpose is to ensure that every AI-assisted development session, architectural decision, documentation update, and implementation remains consistent with the project's vision, engineering standards, and long-term objectives.
+
+Unlike traditional documentation, this document is expected to evolve continuously throughout the lifecycle of the project.
+
+---
+
+# Manifest Objectives
+
+* Preserve architectural consistency.
+* Record engineering decisions.
+* Track project progress.
+* Maintain AI context across development sessions.
+* Prevent conflicting implementations.
+* Define mandatory development standards.
+* Provide implementation priorities.
+* Act as the central reference for all AI-generated work.
+
+---
+
+# Project Identity
+
+| Property                    | Value                                |
+| --------------------------- | ------------------------------------ |
+| Project Name                | GiveFlow India                       |
+| Project Type                | Multi-Tenant SaaS Platform           |
+| Primary Domain              | NGO Donation Management & Compliance |
+| Target Region               | India                                |
+| Primary Users               | NGOs, Trusts, Foundations, Donors    |
+| Primary Development Model   | Documentation First                  |
+| Primary AI Development Tool | Google AI Studio                     |
+| Repository Role             | Single Source of Truth (SSOT)        |
+
+---
+
+# Project Vision
+
+Build India's most comprehensive, secure, scalable, and developer-friendly donation infrastructure platform for NGOs.
+
+The platform should simplify fundraising, donor management, compliance preparation, analytics, and organization management while remaining extensible for future capabilities.
+
+---
+
+# Product Principles
+
+Every feature developed for GiveFlow India must follow these principles.
+
+## Documentation First
+
+No feature should be implemented before its documentation exists.
+
+---
+
+## Architecture First
+
+Architectural decisions must precede implementation.
+
+---
+
+## Security by Design
+
+Security is mandatory and must never be treated as an optional enhancement.
+
+---
+
+## Compliance by Design
+
+Statutory workflows should be considered during system design rather than added later.
+
+---
+
+## API First
+
+Every business capability should be accessible through documented APIs.
+
+---
+
+## AI Assisted Development
+
+Documentation should be optimized for AI-assisted implementation without sacrificing clarity for human developers.
+
+---
+
+# Current Development Phase
+
+**Phase:** Product Discovery & Technical Blueprint
+
+Current Sprint:
+
+Sprint 0 — Repository Foundation
+
+---
+
+# Documentation Progress
+
+| Area                    | Status     |
+| ----------------------- | ---------- |
+| README                  | ✅ Complete |
+| CONTRIBUTING            | ✅ Complete |
+| AI Development Manifest | ✅ Complete |
+| Project Overview        | ⏳ Pending  |
+| Product Discovery       | ⏳ Pending  |
+| Product Vision          | ⏳ Pending  |
+| Business Model          | ⏳ Pending  |
+| Functional Requirements | ⏳ Pending  |
+| Architecture            | ⏳ Pending  |
+
+This table must be updated whenever a document reaches an approved state.
+
+---
+
+# Approved Technology Stack
+
+## Frontend
+
+* Next.js
+* React
+* TypeScript
+* Tailwind CSS
+* shadcn/ui
+* Framer Motion
+* React Hook Form
+* TanStack Query
+* Zod
+
+---
+
+## Backend
+
+* FastAPI
+* SQLAlchemy
+* Alembic
+* Celery
+
+---
+
+## Database
+
+* PostgreSQL
+
+---
+
+## Cache
+
+* Redis
+
+---
+
+## Authentication
+
+* JWT
+* Refresh Tokens
+* Email OTP
+* OAuth (Future)
+
+---
+
+## Payments
+
+Primary:
+
+* Razorpay
+
+Future:
+
+* Cashfree
+* Stripe
+* PhonePe
+* PayU
+
+---
+
+## Storage
+
+* Amazon S3 or Cloudflare R2
+
+---
+
+## Deployment
+
+* Docker
+* Nginx
+* GitHub Actions
+
+Future:
+
+* Kubernetes
+
+---
+
+# Multi-Tenant Principles
+
+The platform must support multiple organizations securely.
+
+Every organization must have isolated data.
+
+Every business entity must be associated with an Organization.
+
+Tenant isolation must be enforced throughout the application.
+
+Future database strategies may evolve, but all implementations must preserve tenant isolation.
+
+---
+
+# Non-Negotiable Engineering Rules
+
+Every implementation generated by AI must:
+
+* Follow Clean Architecture.
+* Follow SOLID principles.
+* Use dependency injection where appropriate.
+* Avoid duplicated business logic.
+* Keep modules loosely coupled.
+* Be testable.
+* Include error handling.
+* Include logging.
+* Include validation.
+* Include documentation.
+
+---
+
+# Documentation Rules
+
+Every Markdown document must include:
+
+* Metadata
+* Purpose
+* Scope
+* Dependencies
+* Cross References
+* Business Rules
+* Future Enhancements
+* Revision History
+
+---
+
+# AI Instructions
+
+Whenever Google AI Studio is asked to generate code, it must:
+
+1. Read the relevant specification documents before generating code.
+2. Preserve architectural consistency.
+3. Never invent conflicting business rules.
+4. Never rename domain concepts without updating documentation.
+5. Follow documented folder structures.
+6. Respect coding standards.
+7. Keep modules reusable.
+8. Generate production-quality code.
+9. Avoid placeholder implementations unless explicitly requested.
+10. Explain assumptions when documentation is incomplete.
+
+---
+
+# Architecture Decision Register
+
+Major technical decisions will be tracked separately using Architecture Decision Records (ADRs).
+
+Each ADR should include:
+
+* Context
+* Problem
+* Options Considered
+* Final Decision
+* Consequences
+* References
+
+This manifest should reference ADRs when decisions affect the overall project direction.
+
+---
+
+# Change Log
+
+## Version 1.0.0
+
+* Established the AI governance model.
+* Defined project principles.
+* Approved initial technology stack.
+* Defined documentation standards.
+* Established engineering rules.
+* Introduced AI-assisted development workflow.
+
+---
+
+# Open Questions
+
+The following items require future architectural discussion:
+
+* Subscription and billing strategy.
+* White-label deployment architecture.
+* Plugin and extension framework.
+* Public API monetization.
+* Multi-language support.
+* Accounting software integrations.
+* Mobile applications.
+* Enterprise deployment model.
+
+---
+
+# Success Criteria
+
+The blueprint will be considered complete when:
+
+* Product specifications are complete.
+* Architecture is fully documented.
+* Business rules are defined.
+* APIs are specified.
+* Security standards are documented.
+* Engineering standards are finalized.
+* Every major module has an implementation specification.
+* Google AI Studio can generate production-ready modules by referencing this repository.
+
+---
+
+# Revision History
+
+| Version | Date       | Description                              |
+| ------- | ---------- | ---------------------------------------- |
+| 1.0.0   | 2026-07-08 | Initial AI Development Manifest created. |
+
+---
+
+# Maintenance Policy
+
+This document is mandatory.
+
+Every significant change to the project must be reflected here before implementation begins.
+
+Failure to keep this document current may lead to inconsistent AI-generated output and architectural drift.
+
+---
+
+**Manifest Principle**
+
+> *The documentation is the product specification. The implementation is only one realization of that specification.*
